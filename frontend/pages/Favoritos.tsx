@@ -2,6 +2,7 @@ import CardFilm from '../components/cardFilm';
 import Logo from '../components/Logo';
 
 export default function Favoritos() {
+  
   return (
     <div className="bg-gradient-to-b from-red-500 via-red-400">
       <div className="flex flex-row justify-between items-center w-full p-1">

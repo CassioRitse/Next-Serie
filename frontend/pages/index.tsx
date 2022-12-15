@@ -1,13 +1,15 @@
-import TextButton from '../components/TextButton';
-import Logo from '../components/Logo';
-import CardFilm from '../components/cardFilm';
-import InputUser from '../components/Input';
-import Button from '../components/Button';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className=' bg-gradient-to-r from-default-color-800 '>
-      
+    <div className="flex justify-center items-center h-screen">
+      <Link
+        href={'/Pesquisa'}
+        className="bg-red-500 text-white p-4 rounded-lg hover:opacity-80 hover:text-black"
+      >
+        {' '}
+        Pagina dos Filmes
+      </Link>
     </div>
   );
 }

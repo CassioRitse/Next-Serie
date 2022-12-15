@@ -1,22 +1,22 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import CapaFilme from '../public/capaFilmeTeste.jpg';
 
-interface Props {
+interface dataProps {
   href: string;
   nome: string;
   img?: string;
 }
 
-const CardFilm: React.FC<Props> = function CardFilm(Props) {
+const CardFilm: React.FC<dataProps> = function CardFilm(Props:dataProps) {
   return (
     <div className="w-fit m-3">
       <Link href={Props.href}>
         <Image className='rounded-lg'
           alt={`Capa do filme ${Props.nome}`}
-          src={CapaFilme}
-          width={160}
+          src={`https://image.tmdb.org/t/p/w200${Props.img}`}
+          height={200}
+          width={200}
         />
       </Link>
     </div>
